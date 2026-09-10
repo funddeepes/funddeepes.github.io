@@ -1,0 +1,656 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>曼秀雷敦-品牌产品线与日常护理选购指南</title>
+<meta name="description" content="曼秀雷敦品牌首页，介绍润唇护理、防晒、肌肤护理、男士护理等主要产品方向，提供成分关注点、使用场景、选购建议与常见问题解答，帮助日常护理选择。">
+<meta name="keywords" content="曼秀雷敦,润唇膏,防晒,护肤,男士护理,日常护理,选购指南">
+<script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+<style>
+:root{
+  --ink:#1c2b2a;
+  --ink-soft:#41534f;
+  --muted:#6c7d78;
+  --line:#dfe8e4;
+  --bg:#f5faf7;
+  --card:#ffffff;
+  --green:#1f7a5c;
+  --green-deep:#155f47;
+  --green-pale:#e6f4ee;
+  --mint:#8fd3ba;
+  --amber:#e8a33d;
+  --radius:14px;
+  --shadow:0 8px 26px rgba(22,74,58,.08);
+}
+*{box-sizing:border-box;margin:0;padding:0;}
+html{scroll-behavior:smooth;}
+body{
+  font-family:"PingFang SC","Hiragino Sans GB","Microsoft YaHei","Helvetica Neue",Arial,sans-serif;
+  background:var(--bg);
+  color:var(--ink);
+  line-height:1.75;
+  font-size:16px;
+  -webkit-font-smoothing:antialiased;
+}
+a{color:inherit;text-decoration:none;}
+img{max-width:100%;display:block;}
+.wrap{width:min(1180px,92%);margin:0 auto;}
+
+/* ---------- 顶栏 ---------- */
+.topbar{
+  background:var(--green-deep);
+  color:#d9efe5;
+  font-size:13px;
+}
+.topbar .wrap{
+  display:flex;justify-content:space-between;align-items:center;
+  gap:12px;padding:8px 0;flex-wrap:wrap;
+}
+.topbar span{opacity:.9;}
+.topbar .top-links{display:flex;gap:18px;flex-wrap:wrap;}
+.topbar .top-links a:hover{color:#fff;text-decoration:underline;}
+
+/* ---------- 页眉 ---------- */
+header.site-head{
+  background:linear-gradient(180deg,#ffffff 0%,#f2faf6 100%);
+  border-bottom:1px solid var(--line);
+  position:sticky;top:0;z-index:50;
+}
+.head-inner{
+  display:flex;align-items:center;justify-content:space-between;
+  gap:20px;padding:14px 0;flex-wrap:wrap;
+}
+.logo{display:flex;align-items:center;gap:12px;}
+.logo-mark{
+  width:44px;height:44px;border-radius:12px;
+  background:linear-gradient(135deg,var(--green),var(--mint));
+  display:grid;place-items:center;color:#fff;font-weight:800;font-size:18px;
+  letter-spacing:.5px;box-shadow:0 6px 16px rgba(31,122,92,.28);
+}
+.logo-text b{display:block;font-size:19px;letter-spacing:1px;}
+.logo-text small{color:var(--muted);font-size:12px;letter-spacing:.5px;}
+nav.main-nav ul{display:flex;gap:6px;list-style:none;flex-wrap:wrap;}
+nav.main-nav a{
+  display:block;padding:8px 14px;border-radius:999px;
+  font-size:15px;color:var(--ink-soft);transition:.2s;
+}
+nav.main-nav a:hover{background:var(--green-pale);color:var(--green-deep);}
+.head-cta{
+  background:var(--green);color:#fff;padding:9px 20px;border-radius:999px;
+  font-size:14px;font-weight:600;box-shadow:0 6px 16px rgba(31,122,92,.25);
+  transition:.2s;white-space:nowrap;
+}
+.head-cta:hover{background:var(--green-deep);}
+
+/* ---------- 首屏 ---------- */
+.hero{
+  padding:54px 0 46px;
+  background:
+    radial-gradient(900px 340px at 88% -10%,rgba(143,211,186,.35),transparent 70%),
+    radial-gradient(700px 300px at 5% 110%,rgba(232,163,61,.16),transparent 70%);
+}
+.hero-grid{
+  display:grid;grid-template-columns:1.15fr .85fr;gap:44px;align-items:center;
+}
+.hero h1{
+  font-size:clamp(28px,3.6vw,42px);line-height:1.3;letter-spacing:.5px;
+  margin-bottom:18px;
+}
+.hero h1 em{
+  font-style:normal;color:var(--green);border-bottom:4px solid rgba(143,211,186,.55);
+  padding-bottom:2px;
+}
+.hero p.lead{color:var(--ink-soft);font-size:17px;margin-bottom:26px;max-width:56ch;}
+.hero-actions{display:flex;gap:14px;flex-wrap:wrap;margin-bottom:26px;}
+.btn{
+  display:inline-block;padding:12px 26px;border-radius:999px;font-size:15px;
+  font-weight:600;transition:.2s;border:1px solid transparent;
+}
+.btn-primary{background:var(--green);color:#fff;box-shadow:0 8px 20px rgba(31,122,92,.25);}
+.btn-primary:hover{background:var(--green-deep);transform:translateY(-1px);}
+.btn-ghost{background:#fff;color:var(--green-deep);border-color:var(--line);}
+.btn-ghost:hover{border-color:var(--mint);background:var(--green-pale);}
+.hero-tags{display:flex;gap:10px;flex-wrap:wrap;list-style:none;}
+.hero-tags li{
+  background:#fff;border:1px solid var(--line);color:var(--ink-soft);
+  font-size:13px;padding:5px 13px;border-radius:999px;
+}
+.hero-panel{
+  background:var(--card);border:1px solid var(--line);border-radius:20px;
+  padding:26px;box-shadow:var(--shadow);
+}
+.hero-panel h2{font-size:17px;margin-bottom:16px;color:var(--green-deep);}
+.hero-panel ul{list-style:none;display:grid;gap:14px;}
+.hero-panel li{display:flex;gap:12px;align-items:flex-start;font-size:14.5px;color:var(--ink-soft);}
+.dot{
+  flex:0 0 auto;width:26px;height:26px;border-radius:8px;background:var(--green-pale);
+  color:var(--green-deep);display:grid;place-items:center;font-size:13px;font-weight:700;
+}
+
+/* ---------- 通用区块 ---------- */
+section.block{padding:52px 0;}
+.sec-head{margin-bottom:28px;max-width:70ch;}
+.sec-head .kicker{
+  display:inline-block;font-size:13px;letter-spacing:2px;color:var(--green);
+  font-weight:700;margin-bottom:8px;
+}
+.sec-head h2{font-size:clamp(22px,2.4vw,29px);line-height:1.35;margin-bottom:10px;}
+.sec-head p{color:var(--muted);font-size:15.5px;}
+
+/* ---------- 产品方向 ---------- */
+.cat-grid{
+  display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:20px;
+}
+.cat-card{
+  background:var(--card);border:1px solid var(--line);border-radius:var(--radius);
+  padding:24px;transition:.22s;position:relative;overflow:hidden;
+}
+.cat-card::before{
+  content:"";position:absolute;inset:0 auto 0 0;width:4px;
+  background:linear-gradient(180deg,var(--green),var(--mint));opacity:0;transition:.22s;
+}
+.cat-card:hover{transform:translateY(-4px);box-shadow:var(--shadow);border-color:var(--mint);}
+.cat-card:hover::before{opacity:1;}
+.cat-card .ico{
+  width:46px;height:46px;border-radius:12px;background:var(--green-pale);
+  display:grid;place-items:center;font-size:22px;margin-bottom:14px;
+}
+.cat-card h3{font-size:17.5px;margin-bottom:8px;}
+.cat-card p{font-size:14.5px;color:var(--ink-soft);margin-bottom:12px;}
+.cat-card .meta{font-size:13px;color:var(--muted);border-top:1px dashed var(--line);padding-top:10px;}
+
+/* ---------- 选购要点 ---------- */
+.tips-wrap{
+  display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:18px;
+}
+.tip{
+  background:#fff;border-radius:var(--radius);border:1px solid var(--line);
+  padding:22px;display:flex;gap:16px;
+}
+.tip .num{
+  flex:0 0 auto;font-size:22px;font-weight:800;color:var(--mint);
+  font-family:Georgia,serif;line-height:1;
+}
+.tip h3{font-size:16.5px;margin-bottom:6px;}
+.tip p{font-size:14.5px;color:var(--ink-soft);}
+
+/* ---------- 场景 ---------- */
+.scene{
+  background:#fff;border:1px solid var(--line);border-radius:20px;
+  padding:34px;box-shadow:var(--shadow);
+}
+.scene-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:22px;}
+.scene-item h3{
+  font-size:16px;margin-bottom:8px;display:flex;align-items:center;gap:8px;
+}
+.scene-item h3::before{
+  content:"";width:8px;height:8px;border-radius:50%;background:var(--amber);
+}
+.scene-item p{font-size:14.5px;color:var(--ink-soft);}
+
+/* ---------- 列表区 ---------- */
+.two-col{display:grid;grid-template-columns:1.35fr .65fr;gap:32px;align-items:start;}
+.list-card{
+  background:#fff;border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;
+}
+.list-card .lc-head{
+  padding:16px 22px;border-bottom:1px solid var(--line);
+  font-weight:700;font-size:16px;color:var(--green-deep);background:#fbfefc;
+}
+.list-card ul{list-style:none;}
+.list-card li{
+  padding:15px 22px;border-bottom:1px solid var(--line);font-size:14.8px;color:var(--ink-soft);
+  display:flex;gap:12px;
+}
+.list-card li:last-child{border-bottom:none;}
+.list-card li b{color:var(--ink);font-weight:600;}
+.list-card li .idx{color:var(--mint);font-weight:800;font-family:Georgia,serif;}
+
+aside.side-card{
+  background:linear-gradient(160deg,#ffffff,#eef8f3);
+  border:1px solid var(--line);border-radius:var(--radius);padding:24px;
+}
+aside.side-card h3{font-size:16.5px;margin-bottom:12px;color:var(--green-deep);}
+aside.side-card p{font-size:14.5px;color:var(--ink-soft);margin-bottom:14px;}
+aside.side-card ul{list-style:none;display:grid;gap:10px;}
+aside.side-card li{
+  font-size:14px;color:var(--ink-soft);padding-left:16px;position:relative;
+}
+aside.side-card li::before{
+  content:"";position:absolute;left:0;top:10px;width:6px;height:6px;
+  border-radius:50%;background:var(--green);
+}
+
+/* ---------- FAQ ---------- */
+.faq{display:grid;gap:14px;}
+.faq details{
+  background:#fff;border:1px solid var(--line);border-radius:var(--radius);
+  padding:0 22px;transition:.2s;
+}
+.faq details[open]{border-color:var(--mint);box-shadow:var(--shadow);}
+.faq summary{
+  cursor:pointer;list-style:none;padding:18px 0;font-weight:600;font-size:15.5px;
+  display:flex;justify-content:space-between;align-items:center;gap:14px;
+}
+.faq summary::-webkit-details-marker{display:none;}
+.faq summary::after{
+  content:"+";color:var(--green);font-size:20px;font-weight:400;flex:0 0 auto;
+}
+.faq details[open] summary::after{content:"−";}
+.faq .ans{padding:0 0 18px;font-size:14.8px;color:var(--ink-soft);border-top:1px dashed var(--line);padding-top:14px;}
+
+/* ---------- 提示条 ---------- */
+.notice{
+  background:var(--green-pale);border:1px solid #cfe9de;border-radius:var(--radius);
+  padding:20px 24px;font-size:14.5px;color:var(--green-deep);
+}
+.notice b{display:block;margin-bottom:6px;}
+
+/* ---------- 页脚 ---------- */
+footer.site-foot{
+  background:#12352b;color:#bcd8cd;margin-top:20px;padding:44px 0 22px;font-size:14px;
+}
+.foot-grid{
+  display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;gap:30px;
+  padding-bottom:28px;border-bottom:1px solid rgba(255,255,255,.12);
+}
+.foot-grid h4{color:#fff;font-size:15px;margin-bottom:14px;}
+.foot-grid p{font-size:13.5px;line-height:1.8;color:#a9c8bc;}
+.foot-grid ul{list-style:none;display:grid;gap:9px;}
+.foot-grid a{font-size:13.5px;color:#a9c8bc;}
+.foot-grid a:hover{color:#fff;text-decoration:underline;}
+.foot-bottom{
+  padding-top:18px;display:flex;justify-content:space-between;gap:14px;
+  flex-wrap:wrap;font-size:13px;color:#8fb3a6;
+}
+
+/* ---------- 响应式 ---------- */
+@media (max-width:980px){
+  .hero-grid{grid-template-columns:1fr;gap:30px;}
+  .two-col{grid-template-columns:1fr;}
+  .foot-grid{grid-template-columns:1fr 1fr;}
+}
+@media (max-width:640px){
+  body{font-size:15.5px;}
+  .head-inner{padding:12px 0;}
+  nav.main-nav ul{gap:2px;}
+  nav.main-nav a{padding:7px 10px;font-size:14px;}
+  .head-cta{display:none;}
+  .hero{padding:36px 0 30px;}
+  section.block{padding:38px 0;}
+  .scene{padding:24px;}
+  .foot-grid{grid-template-columns:1fr;gap:22px;}
+  .topbar .top-links{display:none;}
+}
+</style>
+</head>
+<body>
+
+<div class="topbar">
+  <div class="wrap">
+    <span>日常护理品牌信息页 · 内容整理与选购参考</span>
+    <div class="top-links">
+      <a href="#categories">产品方向</a>
+      <a href="#tips">选购要点</a>
+      <a href="#faq">常见问题</a>
+    </div>
+  </div>
+</div>
+
+<header class="site-head">
+  <div class="wrap head-inner">
+    <a class="logo" href="#top">
+      <span class="logo-mark">曼</span>
+      <span class="logo-text">
+        <b>曼秀雷敦</b>
+        <small>MENTHOLATUM · 护理品牌信息</small>
+      </span>
+    </a>
+    <nav class="main-nav" aria-label="主导航">
+      <ul>
+        <li><a href="#intro">品牌概览</a></li>
+        <li><a href="#categories">产品方向</a></li>
+        <li><a href="#tips">选购要点</a></li>
+        <li><a href="#scenes">使用场景</a></li>
+        <li><a href="#faq">常见问题</a></li>
+      </ul>
+    </nav>
+    <a class="head-cta" href="#tips">看选购要点</a>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- 首屏 -->
+  <section class="hero" id="intro">
+    <div class="wrap hero-grid">
+      <div>
+        <h1>曼秀雷敦：从<em>润唇护理</em>到日常肌肤护理的品牌产品梳理</h1>
+        <p class="lead">
+          如果你在搜索“曼秀雷敦”，通常是想弄清楚它到底有哪些产品线、不同系列适合什么场景、选购时该看哪些信息。
+          本页按护理用途把品牌主要方向整理清楚，帮助你更快定位到自己需要的那一类产品，而不是在货架前反复比较。
+        </p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#categories">浏览产品方向</a>
+          <a class="btn btn-ghost" href="#tips">查看选购要点</a>
+        </div>
+        <ul class="hero-tags">
+          <li>润唇护理</li>
+          <li>防晒护理</li>
+          <li>面部与身体护理</li>
+          <li>男士护理</li>
+          <li>外用舒缓类</li>
+        </ul>
+      </div>
+      <div class="hero-panel">
+        <h2>先明确三件事，再挑产品</h2>
+        <ul>
+          <li><span class="dot">1</span><span><b>护理部位</b>：唇部、面部、身体、手部还是局部肌肤，决定你要看的产品类别。</span></li>
+          <li><span class="dot">2</span><span><b>使用环境</b>：日常通勤、户外日晒、干燥季节或空调房，需求差别明显。</span></li>
+          <li><span class="dot">3</span><span><b>肤感偏好</b>：清爽、滋润、成膜感、是否带香味，直接影响使用体验和坚持度。</span></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- 品牌概览 -->
+  <section class="block">
+    <div class="wrap">
+      <div class="sec-head">
+        <span class="kicker">品牌概览</span>
+        <h2>一个以日常护理为核心的品牌结构</h2>
+        <p>
+          曼秀雷敦是一个在个人护理领域被广泛认知的品牌，产品覆盖唇部护理、防晒、面部与身体护理、男士护理等多个方向。
+          它的特点是品类跨度较宽、单品定位偏向日常使用，因此在选购时更需要按“用途”而不是按“名气”来筛选。
+        </p>
+      </div>
+      <div class="notice">
+        <b>阅读提示</b>
+        本页为品牌与产品的信息整理页，用于帮助理解产品分类和选购思路，不构成医疗建议。若肌肤存在持续不适、过敏或破损，请及时咨询皮肤科医生或专业人士，不要仅依赖护肤品自行处理。
+      </div>
+    </div>
+  </section>
+
+  <!-- 产品方向 -->
+  <section class="block" id="categories">
+    <div class="wrap">
+      <div class="sec-head">
+        <span class="kicker">产品方向</span>
+        <h2>按护理用途划分的主要产品类别</h2>
+        <p>不同类别的关注点并不相同。下面按用途拆分，方便你快速判断自己该从哪一类看起。</p>
+      </div>
+
+      <div class="cat-grid">
+        <article class="cat-card">
+          <div class="ico">💧</div>
+          <h3>润唇护理</h3>
+          <p>以唇部滋润与防护为主，常见形态包括润唇膏、唇部啫喱等，适合干燥、起皮或长期处于空调环境的人群日常使用。</p>
+          <div class="meta">关注点：滋润度、是否带防晒、香味与质地</div>
+        </article>
+
+        <article class="cat-card">
+          <div class="ico">☀️</div>
+          <h3>防晒护理</h3>
+          <p>用于减少紫外线对肌肤的日常影响，常见有面部与身体用防晒产品，质地从清爽到滋润不等，需按使用场景选择。</p>
+          <div class="meta">关注点：防晒指数、肤感、是否防水、补涂便利性</div>
+        </article>
+
+        <article class="cat-card">
+          <div class="ico">🧴</div>
+          <h3>面部与身体护理</h3>
+          <p>包括洁面、保湿、身体乳等基础护理品类，偏向日常维持肌肤状态，适合建立稳定的护理习惯。</p>
+          <div class="meta">关注点：肤质匹配、清爽或滋润、使用频率</div>
+        </article>
+
+        <article class="cat-card">
+          <div class="ico">🧔</div>
+          <h3>男士护理</h3>
+          <p>针对男士常见需求设计，如洁面、控油、须后护理等，通常强调清爽肤感与使用步骤简单。</p>
+          <div class="meta">关注点：控油感、是否刺激、步骤是否精简</div>
+        </article>
+
+        <article class="cat-card">
+          <div class="ico">🌿</div>
+          <h3>外用舒缓类</h3>
+          <p>用于局部肌肤的日常舒缓与护理，常见于清凉类外用产品，使用时需注意适用范围与使用说明。</p>
+          <div class="meta">关注点：适用部位、使用禁忌、是否适合儿童</div>
+        </article>
+
+        <article class="cat-card">
+          <div class="ico">🧼</div>
+          <h3>清洁与辅助护理</h3>
+          <p>包括洗手、清洁等日常辅助品类，属于高频使用的基础消耗品，选择时更看重使用感与性价比。</p>
+          <div class="meta">关注点：清洁力、是否紧绷、香味浓淡</div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- 选购要点 -->
+  <section class="block" id="tips">
+    <div class="wrap">
+      <div class="sec-head">
+        <span class="kicker">选购要点</span>
+        <h2>挑选时值得逐项确认的五个方面</h2>
+        <p>护理产品没有“通用最优解”，只有是否匹配你的肤质、环境和习惯。以下顺序可以帮助你减少试错。</p>
+      </div>
+
+      <div class="tips-wrap">
+        <div class="tip">
+          <span class="num">01</span>
+          <div>
+            <h3>先看适用部位与说明</h3>
+            <p>唇部、面部、身体、局部肌肤的配方思路不同。使用前先确认产品标注的适用部位与使用方式，避免跨部位使用。</p>
+          </div>
+        </div>
+        <div class="tip">
+          <span class="num">02</span>
+          <div>
+            <h3>再看成分与肤感</h3>
+            <p>关注是否含有你不耐受的成分，以及质地是偏清爽还是偏滋润。油性肌肤通常更在意是否闷、是否搓泥。</p>
+          </div>
+        </div>
+        <div class="tip">
+          <span class="num">03</span>
+          <div>
+            <h3>按场景决定功能</h3>
+            <p>户外日晒场景更需要防晒与补涂便利性；干燥季节则更看重保湿与封闭性。场景决定优先级。</p>
+          </div>
+        </div>
+        <div class="tip">
+          <span class="num">04</span>
+          <div>
+            <h3>留意规格与使用频率</h3>
+            <p>高频使用的品类（如润唇膏、身体乳）可以关注规格与消耗速度，低频或季节性品类则不必囤积过多。</p>
+          </div>
+        </div>
+        <div class="tip">
+          <span class="num">05</span>
+          <div>
+            <h3>通过正规渠道购买</h3>
+            <p>护理产品直接接触肌肤，建议通过正规商超、官方渠道或可信零售平台购买，并留意包装完整性与保质期信息。</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 使用场景 -->
+  <section class="block" id="scenes">
+    <div class="wrap">
+      <div class="sec-head">
+        <span class="kicker">使用场景</span>
+        <h2>把产品放进真实生活里看</h2>
+        <p>同一个品类，在不同场景下的选择逻辑并不一样。以下场景可作为选购时的对照参考。</p>
+      </div>
+
+      <div class="scene">
+        <div class="scene-grid">
+          <div class="scene-item">
+            <h3>通勤与室内办公</h3>
+            <p>长时间处于空调或暖气环境，唇部与面部容易干燥。可选择质地温和、便于随时补涂的滋润类产品，肤感以不黏腻为优先。</p>
+          </div>
+          <div class="scene-item">
+            <h3>户外与旅行</h3>
+            <p>日晒、风吹、温差变化明显时，防晒与防护类产品更重要。建议关注防晒指数、防水性与补涂是否方便。</p>
+          </div>
+          <div class="scene-item">
+            <h3>换季与干燥期</h3>
+            <p>肌肤状态不稳定时，护理步骤宜精简，优先选择成分相对简单、以保湿舒缓为主的产品，减少叠加带来的负担。</p>
+          </div>
+          <div class="scene-item">
+            <h3>运动与出汗后</h3>
+            <p>出汗后清洁与清爽感更被看重。可选择清洁力适中、洗后不紧绷的清洁类产品，并及时补充基础保湿。</p>
+          </div>
+          <div class="scene-item">
+            <h3>学生与日常随身</h3>
+            <p>便携规格、使用简单、价格友好的基础款更适合随身携带，如润唇膏、小规格防晒等高频小件。</p>
+          </div>
+          <div class="scene-item">
+            <h3>家庭共用</h3>
+            <p>家庭使用时更需注意个体差异，尤其是儿童与敏感肌肤人群。使用前应分别确认适用说明，避免直接共用同一支产品。</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 品牌认知 + 侧栏 -->
+  <section class="block">
+    <div class="wrap two-col">
+      <div>
+        <div class="sec-head">
+          <span class="kicker">品牌认知</span>
+          <h2>为什么它在日常护理里被频繁提及</h2>
+          <p>理解品牌的定位，有助于判断哪些产品值得优先了解。</p>
+        </div>
+        <div class="list-card">
+          <div class="lc-head">品牌与产品层面的几个特点</div>
+          <ul>
+            <li><span class="idx">01</span><span><b>品类覆盖广</b>：从唇部到身体、从基础护理到防晒，产品线跨度较大，适合按需挑选而非整套购买。</span></li>
+            <li><span class="idx">02</span><span><b>日常定位明显</b>：多数单品面向日常使用场景，强调可长期坚持的基础护理，而非单次强效处理。</span></li>
+            <li><span class="idx">03</span><span><b>便携小件较多</b>：润唇膏、小规格防晒等便于随身携带，适合放进包里随时补涂。</span></li>
+            <li><span class="idx">04</span><span><b>系列差异需区分</b>：同一品类下往往有多个系列，肤感、香味、滋润度不同，选购时建议看清具体系列名称。</span></li>
+            <li><span class="idx">05</span><span><b>使用说明优先</b>：涉及局部外用或防晒类产品时，应以产品包装上的使用说明和注意事项为准。</span></li>
+          </ul>
+        </div>
+      </div>
+
+      <aside class="side-card">
+        <h3>快速自查清单</h3>
+        <p>下单前花一分钟确认以下几点，能减少不少退换和闲置。</p>
+        <ul>
+          <li>我要用在哪个部位？</li>
+          <li>当前季节和环境的干燥程度如何？</li>
+          <li>我更偏好清爽还是滋润的肤感？</li>
+          <li>是否对香味或某些成分敏感？</li>
+          <li>使用频率高不高，规格是否合适？</li>
+          <li>购买渠道是否正规、包装是否完整？</li>
+        </ul>
+      </aside>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="block" id="faq">
+    <div class="wrap">
+      <div class="sec-head">
+        <span class="kicker">常见问题</span>
+        <h2>关于曼秀雷敦的常见疑问</h2>
+        <p>以下问题来自日常选购中较常出现的困惑，回答以通用护理常识和产品说明为准。</p>
+      </div>
+
+      <div class="faq">
+        <details open>
+          <summary>曼秀雷敦主要做哪些类型的产品？</summary>
+          <div class="ans">从公开的产品线来看，主要涉及润唇护理、防晒、面部与身体护理、男士护理以及部分外用舒缓类和清洁辅助类产品。具体在售品类会随地区、渠道和时间变化，建议以实际销售页面或包装信息为准。</div>
+        </details>
+        <details>
+          <summary>润唇膏应该怎么挑？</summary>
+          <div class="ans">先看使用场景：日常室内可选质地轻薄、便于补涂的款式；户外或干燥环境可关注滋润度更高或带防晒功能的产品。其次看肤感偏好，是否接受香味、是否介意成膜感或黏腻感，都会影响你是否愿意长期使用。</div>
+        </details>
+        <details>
+          <summary>防晒产品是不是指数越高越好？</summary>
+          <div class="ans">不一定。防晒指数反映的是防护能力，但实际效果还与用量、涂抹均匀度、补涂频率和使用环境有关。日常通勤与长时间户外所需并不相同，选择时应兼顾防护需求与肤感，否则容易因为不舒服而减少使用。</div>
+        </details>
+        <details>
+          <summary>敏感肌肤可以用吗？</summary>
+          <div class="ans">不同系列配方不同，不能一概而论。敏感肌肤建议优先选择成分相对简单、标注温和的产品，并在使用前做小范围试用。如果出现持续泛红、刺痛、瘙痒等不适，应停止使用并咨询专业人士。</div>
+        </details>
+        <details>
+          <summary>怎么判断买到的是不是正规产品？</summary>
+          <div class="ans">建议通过正规商超、品牌官方渠道或可信零售平台购买，收到后检查包装是否完整、标签信息是否清晰、生产日期与保质期是否正常。对价格明显异常或来源不明的商品应保持谨慎。</div>
+        </details>
+        <details>
+          <summary>开封后可以用多久？</summary>
+          <div class="ans">不同产品的开封后使用期限不同，通常会在包装上以“开封后 X 个月”的图标标注。唇部与面部产品直接接触肌肤，建议留意使用期限，出现异味、变色或质地异常时应停止使用。</div>
+        </details>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-foot">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <h4>曼秀雷敦 · 护理品牌信息页</h4>
+        <p>围绕品牌产品线、护理场景与选购思路进行内容整理，帮助读者更清晰地理解不同护理品类的用途与差异。</p>
+      </div>
+      <div>
+        <h4>内容导航</h4>
+        <ul>
+          <li><a href="#intro">品牌概览</a></li>
+          <li><a href="#categories">产品方向</a></li>
+          <li><a href="#tips">选购要点</a></li>
+          <li><a href="#scenes">使用场景</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>护理分类</h4>
+        <ul>
+          <li><a href="#categories">润唇护理</a></li>
+          <li><a href="#categories">防晒护理</a></li>
+          <li><a href="#categories">面部与身体护理</a></li>
+          <li><a href="#categories">男士护理</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>使用提醒</h4>
+        <ul>
+          <li>以产品包装说明为准</li>
+          <li>敏感肌肤先小范围试用</li>
+          <li>通过正规渠道购买</li>
+          <li>不适时咨询专业人士</li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>本页为品牌与产品信息整理内容，不构成医疗建议或购买承诺。</span>
+      <span>产品信息请以官方渠道与实物包装为准。</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var links = document.querySelectorAll('a[href^="#"]');
+  for (var i = 0; i < links.length; i++) {
+    links[i].addEventListener('click', function(e){
+      var id = this.getAttribute('href');
+      if (id.length > 1) {
+        var target = document.querySelector(id);
+        if (target) {
+          e.preventDefault();
+          target.scrollIntoView({behavior:'smooth', block:'start'});
+        }
+      }
+    });
+  }
+})();
+</script>
+
+</body>
+</html>
