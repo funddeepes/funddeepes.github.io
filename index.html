@@ -1,0 +1,866 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>黄小游戏-轻量休闲小游戏在线玩与玩法指南</title>
+<meta name="description" content="黄小游戏专注轻量休闲小游戏，提供即点即玩的小游戏分类、玩法说明、操作技巧与常见问题，帮助你在碎片时间快速找到合适的小游戏。">
+<meta name="keywords" content="黄小游戏,休闲小游戏,小游戏在线玩,轻量小游戏,小游戏玩法,小游戏推荐">
+<script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+  background: #fdf8ef;
+  color: #2f2a24;
+  line-height: 1.75;
+  font-size: 16px;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+ul, ol {
+  list-style: none;
+}
+img {
+  max-width: 100%;
+}
+.wrap {
+  width: 100%;
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+/* 顶部 */
+.topbar {
+  background: #2f2a24;
+  color: #f6e9d4;
+  font-size: 13px;
+}
+.topbar .wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 38px;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+.topbar span {
+  opacity: .85;
+}
+.topbar .dot {
+  display: inline-block;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: #f5b544;
+  margin-right: 6px;
+  vertical-align: middle;
+}
+header.site-head {
+  background: linear-gradient(135deg, #ffcf5c 0%, #f7a93b 55%, #f08c2e 100%);
+  padding: 26px 0 30px;
+  position: relative;
+  overflow: hidden;
+}
+header.site-head::after {
+  content: "";
+  position: absolute;
+  right: -60px;
+  top: -60px;
+  width: 240px;
+  height: 240px;
+  border-radius: 50%;
+  background: rgba(255,255,255,.22);
+}
+.head-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 24px;
+  flex-wrap: wrap;
+  position: relative;
+  z-index: 2;
+}
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+.brand-logo {
+  width: 54px;
+  height: 54px;
+  border-radius: 16px;
+  background: #2f2a24;
+  color: #ffcf5c;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  font-weight: 700;
+  flex: 0 0 auto;
+  box-shadow: 0 6px 14px rgba(47,42,36,.28);
+}
+.brand h1 {
+  font-size: 26px;
+  line-height: 1.3;
+  color: #3a2c12;
+  letter-spacing: 1px;
+}
+.brand p {
+  font-size: 13px;
+  color: #6b4f1d;
+  margin-top: 2px;
+}
+.head-tag {
+  background: rgba(255,255,255,.85);
+  border-radius: 999px;
+  padding: 8px 18px;
+  font-size: 13px;
+  color: #7a5410;
+  font-weight: 600;
+  box-shadow: 0 4px 10px rgba(122,84,16,.12);
+}
+/* 导航 */
+nav.main-nav {
+  background: #fff;
+  border-bottom: 2px solid #f3e3c6;
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  box-shadow: 0 2px 10px rgba(180,140,60,.08);
+}
+nav.main-nav .wrap {
+  display: flex;
+  gap: 6px;
+  overflow-x: auto;
+  padding-top: 6px;
+  padding-bottom: 6px;
+}
+nav.main-nav a {
+  padding: 9px 16px;
+  border-radius: 8px;
+  font-size: 15px;
+  color: #5c4a2a;
+  white-space: nowrap;
+  transition: background .2s, color .2s;
+}
+nav.main-nav a:hover,
+nav.main-nav a.active {
+  background: #fdf0d5;
+  color: #b06d12;
+  font-weight: 600;
+}
+/* 首屏 */
+.hero {
+  padding: 34px 0 10px;
+}
+.hero-grid {
+  display: grid;
+  grid-template-columns: 1.4fr 1fr;
+  gap: 26px;
+  align-items: stretch;
+}
+.hero-main {
+  background: #fff;
+  border-radius: 18px;
+  padding: 30px 32px;
+  border: 1px solid #f2e2c4;
+  box-shadow: 0 10px 26px rgba(190,150,70,.10);
+}
+.hero-main h2 {
+  font-size: 23px;
+  color: #3a2c12;
+  margin-bottom: 12px;
+}
+.hero-main p {
+  color: #5f5548;
+  font-size: 15px;
+  margin-bottom: 14px;
+}
+.hero-points {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 18px;
+}
+.hero-points li {
+  background: #fdf3e0;
+  border: 1px solid #f0dcb8;
+  color: #8a6414;
+  font-size: 13px;
+  padding: 6px 14px;
+  border-radius: 999px;
+}
+.hero-side {
+  background: #2f2a24;
+  color: #f4e6cd;
+  border-radius: 18px;
+  padding: 26px 26px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.hero-side h3 {
+  font-size: 18px;
+  color: #ffcf5c;
+  margin-bottom: 12px;
+}
+.hero-side ol {
+  counter-reset: hs;
+}
+.hero-side ol li {
+  counter-increment: hs;
+  position: relative;
+  padding-left: 34px;
+  font-size: 14px;
+  margin-bottom: 10px;
+  color: #e6d8bf;
+}
+.hero-side ol li::before {
+  content: counter(hs);
+  position: absolute;
+  left: 0;
+  top: 2px;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background: #ffcf5c;
+  color: #2f2a24;
+  font-size: 12px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/* 通用 section */
+section.block {
+  padding: 42px 0 6px;
+}
+.sec-head {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 22px;
+  flex-wrap: wrap;
+}
+.sec-head h2 {
+  font-size: 22px;
+  color: #3a2c12;
+  position: relative;
+  padding-left: 14px;
+}
+.sec-head h2::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 6px;
+  bottom: 6px;
+  width: 5px;
+  border-radius: 3px;
+  background: linear-gradient(#ffcf5c, #f08c2e);
+}
+.sec-head p {
+  font-size: 14px;
+  color: #8b7f6c;
+}
+/* 分类卡片 */
+.cat-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 18px;
+}
+.cat-card {
+  background: #fff;
+  border: 1px solid #f2e4ca;
+  border-radius: 14px;
+  padding: 20px 18px;
+  transition: transform .2s, box-shadow .2s;
+}
+.cat-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 24px rgba(200,160,80,.16);
+}
+.cat-card .ico {
+  width: 42px;
+  height: 42px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  margin-bottom: 12px;
+  background: #fdf1d9;
+}
+.cat-card h3 {
+  font-size: 16px;
+  color: #3a2c12;
+  margin-bottom: 6px;
+}
+.cat-card p {
+  font-size: 13.5px;
+  color: #7a6f5d;
+}
+/* 游戏推荐列表 */
+.game-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+}
+.game-item {
+  background: #fff;
+  border-radius: 14px;
+  border: 1px solid #f2e4ca;
+  padding: 18px 18px 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.game-item .tag {
+  align-self: flex-start;
+  font-size: 12px;
+  background: #eaf6ec;
+  color: #3d7a4a;
+  padding: 3px 10px;
+  border-radius: 6px;
+}
+.game-item h3 {
+  font-size: 16px;
+  color: #3a2c12;
+}
+.game-item p {
+  font-size: 13.5px;
+  color: #7a6f5d;
+  flex: 1;
+}
+.game-item .meta {
+  font-size: 12.5px;
+  color: #a2967f;
+  border-top: 1px dashed #eee1c8;
+  padding-top: 8px;
+}
+/* 玩法步骤 */
+.steps {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 18px;
+  counter-reset: st;
+}
+.step {
+  background: #fff;
+  border-radius: 14px;
+  padding: 22px 20px;
+  border: 1px solid #f2e4ca;
+  position: relative;
+}
+.step::before {
+  counter-increment: st;
+  content: "0" counter(st);
+  font-size: 26px;
+  font-weight: 800;
+  color: #f7d99a;
+  display: block;
+  margin-bottom: 6px;
+}
+.step h3 {
+  font-size: 16px;
+  color: #3a2c12;
+  margin-bottom: 6px;
+}
+.step p {
+  font-size: 13.5px;
+  color: #7a6f5d;
+}
+/* 技巧区 */
+.tips-layout {
+  display: grid;
+  grid-template-columns: 1.1fr 1fr;
+  gap: 22px;
+}
+.tips-box {
+  background: #fff;
+  border: 1px solid #f2e4ca;
+  border-radius: 16px;
+  padding: 26px 26px;
+}
+.tips-box h3 {
+  font-size: 18px;
+  color: #3a2c12;
+  margin-bottom: 14px;
+}
+.tips-box ul li {
+  position: relative;
+  padding-left: 22px;
+  font-size: 14.5px;
+  color: #5f5548;
+  margin-bottom: 12px;
+}
+.tips-box ul li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 9px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #f5b544;
+}
+.tips-box ul li strong {
+  color: #3a2c12;
+}
+.notice-box {
+  background: linear-gradient(150deg, #fff6e2, #fdeacb);
+  border: 1px solid #f0dcb8;
+  border-radius: 16px;
+  padding: 26px 26px;
+}
+.notice-box h3 {
+  font-size: 18px;
+  color: #8a6414;
+  margin-bottom: 14px;
+}
+.notice-box p {
+  font-size: 14.5px;
+  color: #6b5a35;
+  margin-bottom: 12px;
+}
+/* FAQ */
+.faq-list {
+  display: grid;
+  gap: 14px;
+}
+.faq-item {
+  background: #fff;
+  border: 1px solid #f2e4ca;
+  border-radius: 12px;
+  padding: 18px 22px;
+}
+.faq-item h3 {
+  font-size: 16px;
+  color: #3a2c12;
+  margin-bottom: 8px;
+  display: flex;
+  gap: 10px;
+}
+.faq-item h3 .q {
+  color: #e79a1f;
+  font-weight: 800;
+  flex: 0 0 auto;
+}
+.faq-item p {
+  font-size: 14px;
+  color: #6f6558;
+  padding-left: 24px;
+}
+/* 页脚 */
+footer.site-foot {
+  margin-top: 52px;
+  background: #2f2a24;
+  color: #cbbfa8;
+  padding: 40px 0 26px;
+  font-size: 14px;
+}
+.foot-grid {
+  display: grid;
+  grid-template-columns: 1.4fr 1fr 1fr;
+  gap: 28px;
+  padding-bottom: 26px;
+  border-bottom: 1px solid #443c31;
+}
+.foot-grid h4 {
+  color: #ffcf5c;
+  font-size: 15px;
+  margin-bottom: 12px;
+}
+.foot-grid p {
+  color: #a89b84;
+  font-size: 13.5px;
+}
+.foot-grid ul li {
+  margin-bottom: 8px;
+}
+.foot-grid ul li a {
+  color: #b8ab93;
+  font-size: 13.5px;
+  transition: color .2s;
+}
+.foot-grid ul li a:hover {
+  color: #ffcf5c;
+}
+.foot-bottom {
+  padding-top: 18px;
+  text-align: center;
+  font-size: 13px;
+  color: #8d8170;
+}
+/* 响应式 */
+@media (max-width: 980px) {
+  .hero-grid,
+  .tips-layout {
+    grid-template-columns: 1fr;
+  }
+  .cat-grid,
+  .steps {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .game-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .foot-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (max-width: 620px) {
+  body {
+    font-size: 15px;
+  }
+  .brand h1 {
+    font-size: 21px;
+  }
+  .brand-logo {
+    width: 46px;
+    height: 46px;
+    font-size: 20px;
+  }
+  .hero-main {
+    padding: 22px 20px;
+  }
+  .hero-side {
+    padding: 22px 20px;
+  }
+  .cat-grid,
+  .steps,
+  .game-list {
+    grid-template-columns: 1fr;
+  }
+  .foot-grid {
+    grid-template-columns: 1fr;
+  }
+  .sec-head h2 {
+    font-size: 19px;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="topbar">
+  <div class="wrap">
+    <span><i class="dot"></i>轻量休闲小游戏 · 即点即玩</span>
+    <span>无需安装客户端 · 打开浏览器即可体验</span>
+  </div>
+</div>
+
+<header class="site-head">
+  <div class="wrap head-inner">
+    <div class="brand">
+      <div class="brand-logo">黄</div>
+      <div>
+        <h1>黄小游戏</h1>
+        <p>碎片时间里的轻量休闲小游戏指南</p>
+      </div>
+    </div>
+    <div class="head-tag">小游戏分类 · 玩法说明 · 上手技巧</div>
+  </div>
+</header>
+
+<nav class="main-nav">
+  <div class="wrap">
+    <a href="#intro" class="active">首页概览</a>
+    <a href="#category">游戏分类</a>
+    <a href="#recommend">推荐小游戏</a>
+    <a href="#howto">怎么玩</a>
+    <a href="#tips">上手技巧</a>
+    <a href="#faq">常见问题</a>
+  </div>
+</nav>
+
+<main>
+
+  <!-- 首屏 -->
+  <section class="hero" id="intro">
+    <div class="wrap hero-grid">
+      <div class="hero-main">
+        <h2>黄小游戏是什么？先弄清楚它解决什么问题</h2>
+        <p>黄小游戏指的是以轻量、休闲、上手门槛低为主要特点的一类小游戏内容。它们通常不需要下载安装大型客户端，打开网页或小程序就能开始玩，单局时间短，规则简单，适合在通勤、午休、排队等碎片时间放松一下。</p>
+        <p>对多数玩家来说，真正关心的并不是“游戏有多少款”，而是三个问题：想玩的时候能不能马上找到合适的类型、玩法规则是否看得懂、玩久了会不会因为难度陡增而失去兴趣。本页围绕这三个问题，把分类、玩法、技巧和注意事项整理清楚，方便你按自己的时间与偏好做选择。</p>
+        <ul class="hero-points">
+          <li>按类型快速定位</li>
+          <li>规则简单易理解</li>
+          <li>单局时长短</li>
+          <li>浏览器直接打开</li>
+        </ul>
+      </div>
+      <aside class="hero-side">
+        <h3>挑选小游戏的四个判断点</h3>
+        <ol>
+          <li>先看单局时长，是否匹配你当下的空闲时间</li>
+          <li>再看操作方式，触屏还是键盘鼠标更顺手</li>
+          <li>确认是否需要联网，避免流量或网络受限</li>
+          <li>留意难度曲线，是否越玩越有挑战而非突然变难</li>
+        </ol>
+      </aside>
+    </div>
+  </section>
+
+  <!-- 分类 -->
+  <section class="block" id="category">
+    <div class="wrap">
+      <div class="sec-head">
+        <h2>小游戏常见分类</h2>
+        <p>按玩法特征划分，方便按兴趣查找</p>
+      </div>
+      <div class="cat-grid">
+        <div class="cat-card">
+          <div class="ico">🧩</div>
+          <h3>益智解谜</h3>
+          <p>以逻辑推理、图形拼接、数字推演为主，节奏偏慢，适合安静环境下慢慢思考。</p>
+        </div>
+        <div class="cat-card">
+          <div class="ico">⚡</div>
+          <h3>反应操作</h3>
+          <p>考验手眼协调与反应速度，单局时间短，节奏快，适合短时间提神。</p>
+        </div>
+        <div class="cat-card">
+          <div class="ico">🎯</div>
+          <h3>闯关挑战</h3>
+          <p>按关卡推进，难度逐步提升，有明确的目标感，适合喜欢循序渐进的玩家。</p>
+        </div>
+        <div class="cat-card">
+          <div class="ico">🌿</div>
+          <h3>休闲放松</h3>
+          <p>操作简单、失败成本低，主要作用是打发时间、缓解紧张情绪。</p>
+        </div>
+        <div class="cat-card">
+          <div class="ico">🧠</div>
+          <h3>记忆训练</h3>
+          <p>通过图案、顺序、数字的记忆与复现来锻炼短期记忆能力。</p>
+        </div>
+        <div class="cat-card">
+          <div class="ico">🎲</div>
+          <h3>随机趣味</h3>
+          <p>带有一定随机性，每局体验不同，适合不想重复相同流程的玩家。</p>
+        </div>
+        <div class="cat-card">
+          <div class="ico">👥</div>
+          <h3>多人互动</h3>
+          <p>支持轮流或实时对战，适合与朋友、同事一起玩，增加互动性。</p>
+        </div>
+        <div class="cat-card">
+          <div class="ico">📱</div>
+          <h3>竖屏单手</h3>
+          <p>专为手机竖屏设计，单手即可操作，适合站立或通勤场景。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 推荐 -->
+  <section class="block" id="recommend">
+    <div class="wrap">
+      <div class="sec-head">
+        <h2>值得一试的小游戏方向</h2>
+        <p>按玩法特征给出参考，具体以实际体验为准</p>
+      </div>
+      <div class="game-list">
+        <article class="game-item">
+          <span class="tag">益智</span>
+          <h3>数字合并类</h3>
+          <p>通过滑动合并相同数字，规则一看就懂，但想拿到高分需要提前规划空间。适合喜欢边玩边思考的玩家。</p>
+          <div class="meta">单局约 3–8 分钟 · 触屏友好</div>
+        </article>
+        <article class="game-item">
+          <span class="tag">反应</span>
+          <h3>节奏点击类</h3>
+          <p>跟随节奏或提示进行点击，节奏越快容错越低。适合短时间集中注意力，放松又提神。</p>
+          <div class="meta">单局约 1–3 分钟 · 建议戴耳机</div>
+        </article>
+        <article class="game-item">
+          <span class="tag">闯关</span>
+          <h3>物理弹射类</h3>
+          <p>调整角度与力度完成目标，每关条件不同，失败后可以立刻重来，挫败感较低。</p>
+          <div class="meta">单局约 2–5 分钟 · 鼠标或触屏</div>
+        </article>
+        <article class="game-item">
+          <span class="tag">放松</span>
+          <h3>模拟经营类</h3>
+          <p>通过简单操作积累资源、解锁内容，节奏由自己掌控，适合不想被时间追着跑的玩家。</p>
+          <div class="meta">可随时暂停 · 进度自动保存</div>
+        </article>
+        <article class="game-item">
+          <span class="tag">记忆</span>
+          <h3>图案记忆类</h3>
+          <p>记住亮起的顺序并复现，关卡越长难度越高，适合用来做短时注意力训练。</p>
+          <div class="meta">单局约 2–4 分钟 · 竖屏体验佳</div>
+        </article>
+        <article class="game-item">
+          <span class="tag">互动</span>
+          <h3>轮流对战类</h3>
+          <p>同一设备轮流操作，规则简单、回合短，适合两个人面对面玩，不需要额外设备。</p>
+          <div class="meta">2 人及以上 · 单回合约 30 秒</div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- 怎么玩 -->
+  <section class="block" id="howto">
+    <div class="wrap">
+      <div class="sec-head">
+        <h2>第一次玩，按这四步走</h2>
+        <p>降低试错成本，快速找到适合自己的类型</p>
+      </div>
+      <div class="steps">
+        <div class="step">
+          <h3>明确空闲时间</h3>
+          <p>只有三五分钟，就优先选单局短的反应类或点击类；有二十分钟以上，再考虑闯关或经营类。</p>
+        </div>
+        <div class="step">
+          <h3>确认设备与操作</h3>
+          <p>手机竖屏优先选单手操作的类型；电脑端可以尝试需要键盘或鼠标精细控制的玩法。</p>
+        </div>
+        <div class="step">
+          <h3>先看规则再开始</h3>
+          <p>多数小游戏在开局前会有简短说明，花十几秒读完，能明显减少前几局的无效尝试。</p>
+        </div>
+        <div class="step">
+          <h3>控制单次时长</h3>
+          <p>给自己设定一个大致结束点，比如“再玩两局就停”，避免一局接一局地拖长时间。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 技巧 -->
+  <section class="block" id="tips">
+    <div class="wrap">
+      <div class="sec-head">
+        <h2>上手技巧与使用提醒</h2>
+        <p>让体验更顺畅，也更有节制</p>
+      </div>
+      <div class="tips-layout">
+        <div class="tips-box">
+          <h3>提升体验的几个做法</h3>
+          <ul>
+            <li><strong>从小目标开始：</strong>先熟悉基础操作，再追求分数或关卡进度，避免一开始就给自己太大压力。</li>
+            <li><strong>固定操作姿势：</strong>触屏游戏尽量保持同一握持方式，减少误触，成绩会更稳定。</li>
+            <li><strong>善用重开机制：</strong>多数小游戏允许快速重来，与其纠结上一局，不如直接开始下一局。</li>
+            <li><strong>关注难度曲线：</strong>如果某一关反复失败且明显超出当前水平，可以换一款，不必强行硬扛。</li>
+            <li><strong>适当休息眼睛：</strong>连续玩二十分钟左右，建议抬头看看远处，缓解视疲劳。</li>
+          </ul>
+        </div>
+        <div class="notice-box">
+          <h3>需要注意的地方</h3>
+          <p>小游戏本身以休闲为目的，不建议把它当作需要投入大量精力的任务。遇到需要填写个人信息的页面，应先确认来源是否可靠，不要随意提交手机号、验证码等敏感内容。</p>
+          <p>另外，部分小游戏页面会包含广告内容，这是常见的运营方式。正常浏览即可，遇到要求下载不明文件、诱导输入账号密码的情况，应直接关闭页面。</p>
+          <p>如果发现游戏加载缓慢或频繁中断，可以先检查网络状态，再尝试刷新页面，通常能解决大部分临时性问题。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="block" id="faq">
+    <div class="wrap">
+      <div class="sec-head">
+        <h2>常见问题</h2>
+        <p>关于黄小游戏的高频疑问</p>
+      </div>
+      <div class="faq-list">
+        <div class="faq-item">
+          <h3><span class="q">Q</span>黄小游戏需要下载安装吗？</h3>
+          <p>多数轻量小游戏以网页形式呈现，打开浏览器即可开始，不需要单独下载客户端。具体是否需要安装，取决于你访问的具体页面说明。</p>
+        </div>
+        <div class="faq-item">
+          <h3><span class="q">Q</span>玩小游戏会消耗很多流量吗？</h3>
+          <p>轻量小游戏的资源体积通常较小，但实际消耗与页面内容、加载次数和是否包含视频广告有关。使用移动网络时，建议留意流量使用情况。</p>
+        </div>
+        <div class="faq-item">
+          <h3><span class="q">Q</span>为什么有的游戏玩到一半会卡住？</h3>
+          <p>常见原因包括网络波动、浏览器标签页过多导致内存紧张，或页面本身加载不完整。可以尝试刷新页面、关闭其他标签页后再进入。</p>
+        </div>
+        <div class="faq-item">
+          <h3><span class="q">Q</span>游戏进度会保存吗？</h3>
+          <p>不同小游戏的机制不一样。有的会自动保存进度，有的每次打开都从头开始。如果进度对你很重要，建议先查看游戏内的说明。</p>
+        </div>
+        <div class="faq-item">
+          <h3><span class="q">Q</span>怎样避免玩太久？</h3>
+          <p>可以在开始前设定一个明确的时间或局数上限，比如“玩三局就停”。也可以借助手机自带的屏幕使用时间提醒功能，帮助自己控制时长。</p>
+        </div>
+        <div class="faq-item">
+          <h3><span class="q">Q</span>适合什么年龄段的人玩？</h3>
+          <p>休闲小游戏整体门槛较低，但不同玩法的操作难度和内容侧重不同。未成年人建议在家长指导下选择内容健康、节奏适度的类型，并注意用眼休息。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-foot">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <h4>关于黄小游戏</h4>
+        <p>本页整理轻量休闲小游戏的分类、玩法说明、上手技巧与常见问题，帮助你在碎片时间里更快找到合适的小游戏类型，合理安排娱乐时间。</p>
+      </div>
+      <div>
+        <h4>内容导航</h4>
+        <ul>
+          <li><a href="#intro">首页概览</a></li>
+          <li><a href="#category">游戏分类</a></li>
+          <li><a href="#recommend">推荐小游戏</a></li>
+          <li><a href="#howto">怎么玩</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>帮助与提醒</h4>
+        <ul>
+          <li><a href="#tips">上手技巧</a></li>
+          <li><a href="#faq">常见问题</a></li>
+          <li><a href="#tips">使用注意事项</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <p>黄小游戏 · 轻量休闲小游戏内容整理 · 请合理安排娱乐时间，注意用眼休息</p>
+    </div>
+  </div>
+</footer>
+
+<script>
+(function () {
+  var links = document.querySelectorAll('nav.main-nav a');
+  var sections = [];
+  links.forEach(function (a) {
+    var id = a.getAttribute('href');
+    if (id && id.charAt(0) === '#') {
+      var el = document.querySelector(id);
+      if (el) sections.push({ link: a, el: el });
+    }
+  });
+  function onScroll() {
+    var pos = window.scrollY + 120;
+    var current = sections.length ? sections[0] : null;
+    sections.forEach(function (s) {
+      if (s.el.offsetTop <= pos) current = s;
+    });
+    links.forEach(function (a) { a.classList.remove('active'); });
+    if (current) current.link.classList.add('active');
+  }
+  window.addEventListener('scroll', onScroll, { passive: true });
+  onScroll();
+})();
+</script>
+
+</body>
+  </html>
